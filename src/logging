@@ -1,0 +1,6 @@
+var isLoggingEnabled = false
+log: function log(...args) {
+    if (isLoggingEnabled) {
+        console.log(...args);
+    }
+}
