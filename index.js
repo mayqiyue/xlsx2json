@@ -63,7 +63,6 @@ function exportJson(args) {
       files.forEach(item => {
         xlsx.toJson(path.join(__dirname, item), path.join(__dirname, config.xlsx.dest));
       });
-
     });
   } else {
     if (args instanceof Array) {
