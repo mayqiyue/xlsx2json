@@ -23,9 +23,9 @@ let commands = {
 let alias_map = {}; // mapping of alias_name -> name
 let parsed_cmds = []; //cmds of parsed out.
 
-// process.on('uncaughtException', function(err) {
-//     console.log('error: ' + err);
-// });
+process.on('uncaughtException', function (err) {
+  console.log('error: ' + err);
+});
 
 //cache of command's key ("--help"...)
 let keys = Object.keys(commands);
